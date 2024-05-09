@@ -1,62 +1,14 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
 
-    <title>Giang Vo Widget TEST</title>
-    <meta name="description" content="The HTML5 Herald" />
-    <meta name="author" content="Khoa Le" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'nonce-CM5NhEHyAp9hrFvb3kzyYQ==' *.paradox.ai d2cxf26suf1qae.cloudfront.net; script-src 'self' 'nonce-CM5NhEHyAp9hrFvb3kzyYQ==' *.paradox.ai d2cxf26suf1qae.cloudfront.net;connect-src 'self' *.paradox.ai d2cxf26suf1qae.cloudfront.net wss://ws.test.paradox.ai www.google-analytics.com;font-src d2cxf26suf1qae.cloudfront.net;img-src d2cxf26suf1qae.cloudfront.net;">
+  <html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSP Demo Page</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'nonce-B4t0zCl34BrVy34DWzWtwg==' *.paradox.ai d2cxf26suf1qae.cloudfront.net; script-src 'self' 'nonce-B4t0zCl34BrVy34DWzWtwg==' *.paradox.ai d2cxf26suf1qae.cloudfront.net;connect-src 'self' *.paradox.ai d2cxf26suf1qae.cloudfront.net wss://ws.test.paradox.ai www.google-analytics.com;font-src d2cxf26suf1qae.cloudfront.net;img-src d2cxf26suf1qae.cloudfront.net;">
 </head>
-     </head>
-  <body>
-    <h1>Environment: TEST</h1>
-
-    <table>
-      <tr>
-        <td>Language:</td>
-        <td>
-          <select id="language" onchange="changeLanguage()">
-            <option value="en">English (en)</option>
-            <option value="en-US">English (en-US)</option>
-            <option value="ar">Arabic</option>
-            <option value="he">Hebrew</option>
-            <option value="ja">Japanese</option>
-            <option value="es">Spanish (es)</option>
-            <option value="ms">Malay (ms)</option>
-            <option value="fr">French (fr)</option>
-            <option value="fr-ca">French(Canada) (fr-ca)</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>Company:</td>
-        <td>ParadoxVN - Giang Vo: Group</td>
-      </tr>
-      <tr>
-        <td>Widget name:</td>
-        <td>Giang Vo Widget</td>
-      </tr>
-    </table>
-    
-    <script>
-      function loadLanguage() {
-        var language = localStorage.getItem('lang');
-        if (!language) {
-          language = 'en';
-        }
-        document.documentElement.lang = language;
-        document.getElementById('language').value = language;
-      }
-      loadLanguage();
-      function changeLanguage() {
-        var language = document.getElementById('language').value;
-        localStorage.setItem('lang', language);
-        location.reload();
-      }
-    </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type='text/javascript' nonce="CM5NhEHyAp9hrFvb3kzyYQ==">
+<body>
+  <h1>CSP Demo Page</h1>
+  <p>This is a demo page to showcase Content Security Policy.</p>
+  <script type='text/javascript' nonce="B4t0zCl34BrVy34DWzWtwg==">
     (function(o,l) {
         window.oliviaChatData = window.oliviaChatData || [];
         window.oliviaChatBaseUrl = o;
@@ -69,8 +21,4 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(apply, s);
     })('https://test.paradox.ai', 'bkumrtstvhrgaimjtdhj');
-</script>
-      <div id="content">
-   <iframe id="main-iframe" width="100%" height="100%" src="https://assets.topdev.vn/images/2021/03/11/galleryvzRrDSLwLwJGMVCfVDhnv9rNbgwQZysj-KQNbz.png" frameborder="0"> == $0
-  </body>
-</html>
+  </script>
